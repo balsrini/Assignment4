@@ -3,8 +3,6 @@ Created on 20-May-2019
 
 @author: Balaji
 '''
-# https://keras.io/
-!pip install -q keras
 
 import keras
 

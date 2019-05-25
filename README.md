@@ -32,7 +32,7 @@
 
 8. How many layers,
 
-   ​	I am looking at 3 Convolution blocks and trying to fit in the parameters to a limit
+   ​	I am looking at 3 Convolution blocks and trying to fit in the parameters to a limit. Currently i have 3 convolution blocks with 2 transition layer.
 
 9. 1x1 Convolutions,
 
@@ -90,7 +90,7 @@
 
 23. Adam vs SGD
 
-     Used Adam so far.
+     Used Adam as it is a good optimization algorithm and has provided good accuracy compared to SGD. Adam is derived from adaptive moment estimation.
 
 24. Image Normalization
 

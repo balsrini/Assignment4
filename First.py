@@ -1,11 +1,12 @@
 '''
-Created on 25-May-2019
+Created on 20-May-2019
 
 @author: Balaji
 '''
-import keras
 # https://keras.io/
 !pip install -q keras
+
+import keras
 
 
 import numpy as np

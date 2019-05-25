@@ -4,6 +4,9 @@ Created on 25-May-2019
 @author: Balaji
 '''
 import keras
+# https://keras.io/
+!pip install -q keras
+
 
 import numpy as np
 from keras.models import Sequential
@@ -18,7 +21,7 @@ from keras.datasets import mnist
 
 print (X_train.shape)
 from matplotlib import pyplot as plt
-plt.imshow(X_train[0])
+plt.imshow(X_train[1])
 plt.show()
 
 X_train = X_train.reshape(X_train.shape[0], 28, 28,1)
@@ -65,17 +68,13 @@ model.add(Activation('softmax'))
 
 model.summary()
 
-model.compile(loss='categorical_crossentropy',
-             optimizer='adam',
-             metrics=['accuracy'])
+#model.compile(loss='categorical_crossentropy', optimizer='adam',metrics=['accuracy'])
 
-model.fit(X_train, Y_train, batch_size=32, 
-          epochs=20, verbose=1, 
-          validation_data=(X_test, Y_test), )
+#model.fit(X_train, Y_train, batch_size=32,epochs=20, verbose=1,validation_data=(X_test, Y_test), )
 
-score = model.evaluate(X_test, Y_test, verbose=0)
+#score = model.evaluate(X_test, Y_test, verbose=0)
 
-print(score)
+#print(score)
 
 
 
